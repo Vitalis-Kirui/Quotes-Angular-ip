@@ -35,13 +35,19 @@
 
                 <div class="quotes" *ngFor='let quote of quotesArray; let i = index'>
 
-                    <p> <span class="ids"> {{quote.id}}. </span> <span class="quoteItself" appHighlighterDirective>{{quote.quotes}}</span> <br> <span id="author"> {{quote.authorName}}</span> </p>
+                    <p> <span class="ids"> {{quote.id}}. </span> <span class="quoteItself" appHighlighterDirective>{{quote.quotes}}</span> <br> <span id="author">Author : {{quote.authorName}}</span> </p>
 
                     <app-qoutes-details *ngIf='quote.showDetails' [quote]='quote' (isComplete)='spliceQoutesConstructor($event, i)'></app-qoutes-details>
 
                     <button class="btn btn-outline-primary toggleButton" (click)='toggleDetails(i)'> Toggle Details</button>
 
                 </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <app-qoutes-form></app-qoutes-form>
 
             </div>
 
