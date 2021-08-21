@@ -1,0 +1,29 @@
+body{
+    font-family: 'Charm',cursive;
+}
+
+.itleIntro{
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+    color: brown;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+#introductionText {
+    font-size: 25px;
+    text-align: center;
+}
+
+.ids{
+    font-size: 25px;
+}
+
+.quoteItself{
+    font-size: 25px;
+    color: rgb(35, 4, 209);
+}

@@ -1,1 +1,39 @@
-<p>qoutes-parent works!</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Parent Component Html files</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="titleIntro">
+
+            <h1 id="title">{{appTitle}} </h1>
+            
+            <p id="introductionText"> {{introductionText}} </p>
+
+        </div>
+
+        <div class="quotes" *ngFor = 'let quote of quotesArray'>
+
+            <p> <span class="ids"> {{quote.id}}.  </span> <span class="quoteItself">{{quote.quotes}}</span> </p>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
