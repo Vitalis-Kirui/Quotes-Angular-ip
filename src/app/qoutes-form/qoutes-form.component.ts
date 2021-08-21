@@ -15,6 +15,8 @@ export class QoutesFormComponent implements OnInit {
   submitQuotesConstructor(){
 
     this.addQuote.emit(this.newQuote);
+//adding new quote without deliting the existing one
+    this.newQuote = new QuotesConstructor(0,"", "", "");
 
   };
 
