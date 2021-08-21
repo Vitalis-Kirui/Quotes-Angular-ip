@@ -12,6 +12,7 @@ body{
     font-weight: 600;
     font-size: 40px;
     font-family: 'Cinzel Decorative', cursive;
+    padding-top: 50px;
 }
 
 #introductionText {
@@ -26,6 +27,7 @@ body{
 .quoteItself{
     font-size: 25px;
     color: rgb(35, 4, 209);
+    padding: 20px;
 }
 
 #author{
@@ -37,4 +39,20 @@ body{
 .toggleButton{
     font-size: 22px;
     margin-left: 20px;
+}
+
+.votingButtons{
+    padding-left: 10px;
+}
+
+.authorButtons {
+    display: flex;
+}
+
+.downs, .ups{
+    margin: 5px;
+}
+
+.quotesSection{
+    padding-top: 20px;
 }
