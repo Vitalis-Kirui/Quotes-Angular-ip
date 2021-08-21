@@ -42,6 +42,16 @@ export class QoutesParentComponent implements OnInit {
 
   };
 
+  addNewQuotesConstructor(quote: any) {
+
+    let quoteLength = this.quotesArray.length;
+
+    quote.id = quoteLength + 1;
+
+    this.quotesArray.push(quote);
+
+  };
+
   constructor() { }
 
   ngOnInit(): void {
