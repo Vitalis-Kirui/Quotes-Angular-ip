@@ -29,7 +29,7 @@
 
         <div class="quotes" *ngFor = 'let quote of quotesArray; let i = index'>
 
-            <p> <span class="ids"> {{quote.id}}.  </span> <span class="quoteItself">{{quote.quotes}}</span> <br> <span id="author"> {{quote.authorName}} </span> </p>
+            <p> <span class="ids"> {{quote.id}}.  </span> <span class="quoteItself" appHighlighterDirective>{{quote.quotes}}</span> <br> <span id="author"> {{quote.authorName}} </span> </p>
 
             <app-qoutes-details *ngIf = 'quote.showDetails' [quote] = 'quote' (isComplete) = 'spliceQoutesConstructor($event, i)'></app-qoutes-details>
 
