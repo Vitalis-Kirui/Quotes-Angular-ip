@@ -14,9 +14,9 @@ export class QoutesParentComponent implements OnInit {
 
   quotesArray: QuotesConstructor [] = [
 
-    new QuotesConstructor(1, "Live as if you were to die tomorrow. Learn as if you were to live forever.", "Mahatma Gandhi", "Kipyegon Kirui Vitalis"),
-    new QuotesConstructor(2, "If you cannot do great things, do small things in a great way.", "Napoleon Hill", "Hrithik Roshan"),
-    new QuotesConstructor(3, "Wise men speak because they have something to say; fools because they have to say something.", "Plato", "Mercy Daniel")
+    new QuotesConstructor(1, "Live as if you were to die tomorrow. Learn as if you were to live forever.", "Mahatma Gandhi", "Kipyegon Kirui Vitalis", new Date(2020,3,14)),
+    new QuotesConstructor(2, "If you cannot do great things, do small things in a great way.", "Napoleon Hill", "Hrithik Roshan", new Date(2021,3,14)),
+    new QuotesConstructor(3, "Wise men speak because they have something to say; fools because they have to say something.", "Plato", "Mercy Daniel", new Date(2021,7,19))
 
   ];
 

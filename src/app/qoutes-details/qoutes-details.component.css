@@ -10,5 +10,11 @@
 }
 
 .deleteButton{
+    font-size: 22px;
     margin-left: 20px;
+}
+
+#date{
+    color: rgb(255, 0, 255);
+    text-decoration: underline double black;
 }

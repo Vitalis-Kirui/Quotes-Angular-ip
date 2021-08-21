@@ -35,5 +35,6 @@ body{
 }
 
 .toggleButton{
+    font-size: 22px;
     margin-left: 20px;
 }

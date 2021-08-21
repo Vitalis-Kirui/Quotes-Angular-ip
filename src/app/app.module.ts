@@ -8,6 +8,7 @@ import { HighlighterDirectiveDirective } from './highlighter-directive.directive
 import { QoutesParentComponent } from './qoutes-parent/qoutes-parent.component';
 import { QoutesDetailsComponent } from './qoutes-details/qoutes-details.component';
 import { QoutesFormComponent } from './qoutes-form/qoutes-form.component';
+import { DaysCounterPipe } from './days-counter.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { QoutesFormComponent } from './qoutes-form/qoutes-form.component';
     HighlighterDirectiveDirective,
     QoutesParentComponent,
     QoutesDetailsComponent,
-    QoutesFormComponent
+    QoutesFormComponent,
+    DaysCounterPipe
   ],
   imports: [
     BrowserModule,
