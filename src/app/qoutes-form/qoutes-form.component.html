@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <h2 class="text-center">Fill in the form to post your quote</h2>
     <hr>
-    <form #quoteForm = 'ngForm'>
+    <form (ngSubmit) = 'submitQuotesConstructor()' #quoteForm = 'ngForm'>
 
         <div class="form-group">
             <label for="description"><span id="inputTitle">Enter your quote.</span></label>
