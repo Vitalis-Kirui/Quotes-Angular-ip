@@ -5,17 +5,38 @@
 
         <div class="form-group">
             <label for="description"><span id="inputTitle">Enter your quote.</span></label>
-            <textarea class="form-control"  rows="4" [(ngModel)] = "newQuote.quotes" name = "name"></textarea>
+            <textarea class="form-control"  rows="4" [(ngModel)] = "newQuote.quotes" name = "quotes" #quotes = 'ngModel' required></textarea>
+
+            <div [hidden] = "quotes.valid || quotes.pristine" class="alert alert-danger" >
+
+                <p>Please provide a quote. </p>
+
+            </div>
+
         </div>
 
         <div class="form-group">
             <label for="name"><span id="inputTitle">Enter Author's name.</span></label>
-            <input type="text" class="form-control" [(ngModel)] = "newQuote.authorName" name = "name">
+            <input type="text" class="form-control" [(ngModel)] = "newQuote.authorName" name = "authorName" #authorName = 'ngModel' required>
+
+            <div [hidden]="authorName.valid || authorName.pristine" class="alert alert-danger">
+            
+                <p>Please provide the author of this quote. </p>
+            
+            </div>
+
         </div>
 
         <div class="form-group">
             <label for="name"><span id="inputTitle">Enter your name.</span></label>
-            <input type="text" required class="form-control" [(ngModel)] = "newQuote.details" name = "name" >
+            <input type="text" required class="form-control" [(ngModel)] = "newQuote.details" name = "details" #details = 'ngModel' required >
+
+            <div [hidden]="details.valid || details.pristine" class="alert alert-danger">
+            
+                <p>Please provide your name. </p>
+            
+            </div>
+
         </div>
 
         <button type="submit" class="btn btn-success">Post Quote</button>
