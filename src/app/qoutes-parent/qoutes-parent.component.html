@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -15,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <div class="container">
@@ -22,22 +24,31 @@
         <div class="titleIntro">
 
             <h1 id="title">{{appTitle}} </h1>
-            
+
             <p id="introductionText"> {{introductionText}} </p>
 
         </div>
 
-        <div class="quotes" *ngFor = 'let quote of quotesArray; let i = index'>
+        <div class="row">
 
-            <p> <span class="ids"> {{quote.id}}.  </span> <span class="quoteItself" appHighlighterDirective>{{quote.quotes}}</span> <br> <span id="author"> {{quote.authorName}} </span> </p>
+            <div class="col-md-6">
 
-            <app-qoutes-details *ngIf = 'quote.showDetails' [quote] = 'quote' (isComplete) = 'spliceQoutesConstructor($event, i)'></app-qoutes-details>
+                <div class="quotes" *ngFor='let quote of quotesArray; let i = index'>
 
-            <button class="btn btn-primary toggleButton" (click) = 'toggleDetails(i)'> Toggle Details</button>
+                    <p> <span class="ids"> {{quote.id}}. </span> <span class="quoteItself" appHighlighterDirective>{{quote.quotes}}</span> <br> <span id="author"> {{quote.authorName}}</span> </p>
+
+                    <app-qoutes-details *ngIf='quote.showDetails' [quote]='quote' (isComplete)='spliceQoutesConstructor($event, i)'></app-qoutes-details>
+
+                    <button class="btn btn-outline-primary toggleButton" (click)='toggleDetails(i)'> Toggle Details</button>
+
+                </div>
+
+            </div>
 
         </div>
 
     </div>
-    
+
 </body>
+
 </html>
