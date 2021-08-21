@@ -26,6 +26,22 @@ export class QoutesParentComponent implements OnInit {
 
   };
 
+  spliceQoutesConstructor(isComplete : any, index : number){
+
+    if(isComplete){
+
+      let toDelete = confirm(`Are you sure you want to DELETE ${this.quotesArray[index].authorName} quote?`)
+
+      if(toDelete){
+
+        this.quotesArray.splice(index, 1)
+
+      }
+
+    }
+
+  };
+
   constructor() { }
 
   ngOnInit(): void {

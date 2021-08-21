@@ -31,7 +31,7 @@
 
             <p> <span class="ids"> {{quote.id}}.  </span> <span class="quoteItself">{{quote.quotes}}</span> <br> <span id="author"> {{quote.authorName}} </span> </p>
 
-            <app-qoutes-details *ngIf = 'quote.showDetails' [quote] = 'quote'></app-qoutes-details>
+            <app-qoutes-details *ngIf = 'quote.showDetails' [quote] = 'quote' (isComplete) = 'spliceQoutesConstructor($event, i)'></app-qoutes-details>
 
             <button class="btn btn-primary toggleButton" (click) = 'toggleDetails(i)'> Toggle Details</button>
 
