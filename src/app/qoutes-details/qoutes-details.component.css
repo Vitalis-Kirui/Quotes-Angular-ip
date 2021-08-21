@@ -1,0 +1,10 @@
+#userName{
+    color: darkred;
+    font-size: 24px;
+}
+
+#details{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    padding-left: 20px;
+}
