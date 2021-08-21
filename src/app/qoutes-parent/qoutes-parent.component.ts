@@ -20,6 +20,12 @@ export class QoutesParentComponent implements OnInit {
 
   ];
 
+  toggleDetails(index : number){
+
+    this.quotesArray[index].showDetails = !this.quotesArray[index].showDetails;
+
+  };
+
   constructor() { }
 
   ngOnInit(): void {

@@ -27,3 +27,13 @@ body{
     font-size: 25px;
     color: rgb(35, 4, 209);
 }
+
+#author{
+    font-size: 23px;
+    color: darkmagenta;
+    padding-left: 20px;
+}
+
+.toggleButton{
+    margin-left: 20px;
+}
