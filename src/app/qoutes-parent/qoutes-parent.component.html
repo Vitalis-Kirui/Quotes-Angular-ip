@@ -19,7 +19,7 @@
 
 <body>
 
-    <span class="border border-primary">
+        <div class="shadow-lg p-3 mb-5 rounded">
 
     <div class="container">
 
@@ -42,7 +42,7 @@
                         <p> <span class="ids"> {{quote.id}}. </span> <span class="quoteItself" appHighlighterDirective>{{quote.quotes}}</span> </p>
 
                     </div>
-                    
+
                     <app-qoutes-details *ngIf='quote.showDetails' [quote]='quote' (isComplete)='spliceQoutesConstructor($event, i)'></app-qoutes-details>
 
                     <button class="btn btn-outline-primary toggleButton" (click)='toggleDetails(i)'> Toggle Details</button>
@@ -61,7 +61,7 @@
 
     </div>
 
-    </span>
+        </div>
 
 </body>
 

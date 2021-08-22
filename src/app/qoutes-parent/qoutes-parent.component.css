@@ -1,5 +1,12 @@
 body{
     font-family: 'Charm',cursive;
+    background-color: rgb(204, 202, 202);
+}
+
+.container{
+    background-color: rgb(245, 239, 239);
+    padding-left: 20px;
+    padding-bottom: 50px;
 }
 
 .itleIntro{

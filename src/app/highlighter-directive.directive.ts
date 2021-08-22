@@ -13,7 +13,7 @@ export class HighlighterDirectiveDirective {
 
   @HostListener ("click") onClicks (){
 
-    this.highligther("black")
+    this.highligther("red")
 
   };
 

@@ -15,13 +15,13 @@
 }
 
 #date{
-    color: rgb(255, 0, 255);
+    color: rgb(0, 37, 139);
     text-decoration: underline double black;
 }
 
 #author {
   font-size: 23px;
-  color: darkmagenta;
+  color: rgb(0, 37, 139);
   padding-left: 20px;
 }
 
