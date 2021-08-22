@@ -29,28 +29,9 @@ body{
     color: rgb(35, 4, 209);
     padding: 20px;
 }
-
-#author{
-    font-size: 23px;
-    color: darkmagenta;
-    padding-left: 20px;
-}
-
-.toggleButton{
-    font-size: 22px;
-    margin-left: 20px;
-}
-
-.votingButtons{
-    padding-left: 10px;
-}
-
-.authorButtons {
-    display: flex;
-}
-
-.downs, .ups{
-    margin: 5px;
+.toggleButton {
+  font-size: 22px;
+  margin-left: 20px;
 }
 
 .quotesSection{

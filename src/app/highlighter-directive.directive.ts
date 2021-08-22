@@ -13,7 +13,7 @@ export class HighlighterDirectiveDirective {
 
   @HostListener ("click") onClicks (){
 
-    this.highligther("tomato")
+    this.highligther("black")
 
   };
 
@@ -25,7 +25,7 @@ export class HighlighterDirectiveDirective {
 
   private highligther( action : string){
 
-    this.elem.nativeElement.style.backgroundColor = action;
+    this.elem.nativeElement.style.color = action;
 
   };
 

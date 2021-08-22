@@ -18,3 +18,28 @@
     color: rgb(255, 0, 255);
     text-decoration: underline double black;
 }
+
+#author {
+  font-size: 23px;
+  color: darkmagenta;
+  padding-left: 20px;
+}
+
+.toggleButton {
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+.votingButtons {
+  padding-left: 10px;
+}
+
+.authorButtons {
+  display: flex;
+}
+
+.downs,
+.ups {
+  margin: 5px;
+  font-size: 24px;
+}

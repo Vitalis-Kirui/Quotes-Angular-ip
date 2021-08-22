@@ -42,7 +42,7 @@ export class QoutesParentComponent implements OnInit {
 
   };
 
-  addNewQuotesConstructor(quote: any) {
+  addNewQuotesConstructor(quote: QuotesConstructor) {
 
     let quoteLength = this.quotesArray.length;
 
