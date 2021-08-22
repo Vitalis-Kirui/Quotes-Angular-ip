@@ -8,7 +8,7 @@ import { QuotesConstructor } from '../quotes-constructor';
 })
 export class QoutesFormComponent implements OnInit {
 
-  newQuote = new QuotesConstructor (0, "", "", "", new Date);
+  newQuote = new QuotesConstructor (0, "", "", "", 0, 0, new Date);
 
   @Output () addQuote = new EventEmitter <QuotesConstructor>();
 
@@ -16,7 +16,7 @@ export class QoutesFormComponent implements OnInit {
 
     this.addQuote.emit(this.newQuote);
 //adding new quote without deliting the existing one
-    this.newQuote = new QuotesConstructor(0,"", "", "", new Date);
+    this.newQuote = new QuotesConstructor(0,"", "", "", 0, 0, new Date);
 
   };
 

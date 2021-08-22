@@ -18,6 +18,17 @@ export class QoutesDetailsComponent implements OnInit {
 
   };
 
+  upCount(index: { upvote: number; }) {
+
+    index.upvote += 1;
+
+  }
+  downCount(index: { downvote: number; }) {
+
+    index.downvote += 1;
+
+  }
+
   constructor() { }
 
   ngOnInit(): void {
