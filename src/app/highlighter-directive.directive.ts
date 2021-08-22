@@ -7,26 +7,26 @@ export class HighlighterDirectiveDirective {
 
   constructor( private elem : ElementRef) { 
 
-    // this.elem.nativeElement.style.backgroundColor = 'tomato';
+    this.elem.nativeElement.style.color = 'red';
 
   };
 
-  @HostListener ("click") onClicks (){
+  // @HostListener ("click") onClicks (){
 
-    this.highligther("red")
+  //   this.highligther("red")
 
-  };
+  // };
 
-  @HostListener ("dblclick") onDoubleClicks(){
+  // @HostListener ("dblclick") onDoubleClicks(){
 
-    this.highligther("")
+  //   this.highligther("")
 
-  };
+  // };
 
-  private highligther( action : string){
+  // private highligther( action : string){
 
-    this.elem.nativeElement.style.color = action;
+  //   this.elem.nativeElement.style.color = action;
 
-  };
+  // };
 
 }

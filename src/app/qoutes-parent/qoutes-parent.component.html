@@ -37,9 +37,24 @@
 
                 <div class="quotes" *ngFor='let quote of quotesArray; let i = index'>
 
-                    <div class="quotesSection">
+                    <!-- <div id={{i}}>
 
-                        <p> <span class="ids"> {{quote.id}}. </span> <span class="quoteItself" appHighlighterDirective>{{quote.quotes}}</span> </p>
+                        <h5 *ngIf='quote.upvote !== getMostLikes() || quote.upvote === 0'>{{ quote.quotes}}.</h5>
+
+                        <div *ngIf='quote.upvote === getMostLikes() && quote.upvote > 0'>
+
+                            <h5 appHighlighterDirective>{{ quote.quotes }}</h5>
+
+                        </div>
+
+                    </div> -->
+
+                    <div class="quotesSection" >
+
+                        <p *ngIf='quote.upvote !== getMostLikes() || quote.upvote === 0'> <span class="ids"> {{quote.id}}. </span> <span class="quoteItself">{{quote.quotes}}</span> </p>
+
+                        <p *ngIf='quote.upvote === getMostLikes() && quote.upvote > 0'> <span class="ids"> {{quote.id}}. </span> <span
+                                class="quoteItself" appHighlighterDirective>{{quote.quotes}}</span> </p>
 
                     </div>
 

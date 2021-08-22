@@ -63,6 +63,12 @@ export class QoutesParentComponent implements OnInit {
 
   }
 
+  getMostLikes() {
+
+    return Math.max(...this.quotesArray.map(quote => quote.upvote))
+    
+  }
+
   constructor() { }
 
   ngOnInit(): void {
